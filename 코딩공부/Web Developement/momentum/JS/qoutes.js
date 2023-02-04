@@ -42,15 +42,15 @@ const qoutes = [
   },
 ];
 
-const qoute = document.querySelector("#qoute span:first-child");
-const author = document.querySelector("#qoute span:last-child");
+const qoute = document.querySelector(".first strong:first-child");
+const author = document.querySelector(".second strong:first-child");
 
 const TodaysQoute = qoutes[Math.floor(Math.random() * qoutes.length)];
 console.log(TodaysQoute);
 // TodaysQoute.qoute = q;
 // TodaysQoute.author = a;
 
-qoute.innnerText = TodaysQoute.qoute;
-author.innnerText = TodaysQoute.author;
+qoute.innerText = TodaysQoute.qoute;
+author.innerText = TodaysQoute.author;
 
 console.log(qoute.innnerText);
